@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Perfect Day Memories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- floating background stickers -->
+<div class="bg-stickers" aria-hidden="true">
+  <span class="sticker s1">🌼</span>
+  <span class="sticker s2">☁️</span>
+  <span class="sticker s3">✨</span>
+  <span class="sticker s4">🍒</span>
+  <span class="sticker s5">🦋</span>
+  <span class="sticker s6">🌸</span>
+  <span class="sticker s7">⭐</span>
+  <span class="sticker s8">🍄</span>
+</div>
+
+<!-- COVER SCREEN -->
+<section id="cover-screen" class="screen">
+  <div class="cover-book">
+    <div class="cover-tape tape-left">📌</div>
+    <div class="cover-tape tape-right">🎀</div>
+    <div class="cover-inner">
+      <p class="cover-eyebrow">est. today ✿</p>
+      <h1 class="cover-title">My perfect<br/>day memories</h1>
+      <div class="cover-divider">❀ ── ❀ ── ❀</div>
+      <p class="cover-sub">a little book of soft days &amp; sweet moments</p>
+      <div class="cover-doodles">🌷 🍯 🧸 🍓</div>
+    </div>
+    <div class="cover-strap"></div>
+  </div>
+  <button id="open-btn" class="open-btn">
+    <span>open my journal</span>
+    <span class="open-btn-heart">💛</span>
+  </button>
+</section>
+
+<!-- BOOK / PAGES SCREEN -->
+<section id="book-screen" class="screen hidden">
+  <div class="book-wrap">
+    <div class="book" id="book">
+      <!-- pages injected by JS -->
+    </div>
+
+    <button id="next-btn" class="next-corner" title="Turn the page" aria-label="Turn the page">
+      <span class="next-fold"></span>
+      <span class="next-label">next ➜</span>
+    </button>
+
+    <button id="prev-btn" class="prev-corner" title="Previous page" aria-label="Previous page">
+      <span class="prev-label">⟵ back</span>
+    </button>
+
+    <div class="page-dots" id="page-dots"></div>
+  </div>
+
+  <button id="close-btn" class="close-btn" title="Close journal">✕ close</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
